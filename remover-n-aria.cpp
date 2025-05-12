@@ -1,4 +1,4 @@
-//Programa de RemoÁ„o Recursiva em ¡rvore N-¡ria
+//Programa de Remo√ß√£o Recursiva em √Årvore N-√Åria
 #include <iostream>
 using namespace std;
 
@@ -34,10 +34,8 @@ void inserir(No* pai, int chave)
 
 No* buscar(No* raiz, int chave)
 {
-    //se a raiz for nula, entao nao encontra nada
     if (raiz == nullptr) return nullptr;
 
-    //se a chave for igual a raiz, entao ja apresenta
     if (raiz->chave == chave) return raiz;
 
     No* encontrado = buscar(raiz->primeiro_filho, chave);
