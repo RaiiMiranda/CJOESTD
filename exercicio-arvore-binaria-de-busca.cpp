@@ -1,3 +1,4 @@
+// Programa Árvore Binária de Busca
 #include <iostream>
 #include <string>
 using namespace std;
@@ -27,7 +28,6 @@ void exibir_em_ordem(No* raiz)
     if(raiz == nullptr)
         return;
 
-
         exibir_em_ordem(raiz->esq);
         cout << raiz->mes << " ";
         exibir_em_ordem(raiz->dir);
@@ -56,3 +56,4 @@ int main(void)
 
     return 0;
 }
+
